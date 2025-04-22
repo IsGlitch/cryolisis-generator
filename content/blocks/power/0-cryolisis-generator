@@ -1,0 +1,55 @@
+{
+  "type": "HeaterGenerator",
+  "name": "Cryolysis Generator",
+  "description": "Utilizes the reaction of water and beryllium to produce power and heat.",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "water",
+        "padding": 2,
+        "alpha": 0.8
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "color": "d1ffec"
+      },
+      {
+        "type": "DrawHeatOutput"
+      }
+    ]
+  },
+  "health": 1080,
+  "size": 3,
+  "hasPower": true,
+  "hasLiquids": true,
+  "hasItems": true,
+  "powerProduction": 18,
+  "heatOutput": 12,
+  "updateEffect": "pulverise",
+  "consumes": {
+    "liquids": [
+      "water/1"
+    ],
+    "items": [
+      "beryllium/10"
+    ]
+  },
+  "squareSprite": false,
+  "requirements": [
+    "tungsten/360",
+    "silicon/240",
+    "oxide/70",
+    "beryllium/200"
+  ],
+  "category": "power",
+  "research": "pyrolysis-generator"
+}

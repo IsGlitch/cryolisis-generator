@@ -1,0 +1,8 @@
+name: "cryolisis-generator"
+displayName: "Cryolysis Generator"
+author: IsGlitch
+description: "silly lil mod lol"
+version: "1.0"
+minGameVersion: "147"
+dependencies: [ ]
+hidden: false
